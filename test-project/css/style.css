@@ -3,6 +3,16 @@
  */
 
 :root{
+  --clr-primary-200: hsl(56, 82%, 50%);
+    --clr-primary-400: hsl(56, 82%, 73%);
+    --clr-primary-700: hsl(54, 89%, 30%);
+
+    --clr-secondary-200: hsl(0, 81%, 73%);
+    --clr-secondary-200: hsl(0, 81%, 50%);
+    --clr-secondary-200: hsl(0, 45%, 30%);
+
+
+
     --ff-accent: 'Montserrat', sans-serif;
     --fw-400: 400;
     --fw-600: 600;
@@ -70,13 +80,14 @@
 
 body{
     font-family: var(--ff-accent);
+    background-color: var(--clr-primary-400);
 }
 
 .nav-links li{
     font-weight: 600;
     list-style: none;
     display: inline-block;
-    padding: 30px 30px;
+    padding: 15px 30px 0px 30px;
 }
 
 .nav-links a{
@@ -84,9 +95,40 @@ body{
     color: black;
 }
 
+.nav-links img{
+display: block;
+width: 40px;
+height: 40px;
+margin: auto;
+}
+
 header{
+    background-color: var(--clr-primary-200);
     display: flex;
     justify-content: space-between;
-    padding: 30px 10%;
+    padding: 0 5%;
+    height: 51px;
 
+}
+
+/* hero section */
+
+#hero >.container{
+  max-width: 1000vh;
+  background-image: url(./../images/hero-img.jpg);
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.info{
+  padding-left: 200px;
+}
+
+.info > h1 {
+  font-weight: var(--fw-800);
+} 
+
+h2{
+  font-weight: var(--fw-600);
 }
